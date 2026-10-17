@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-5 text-lg text-text-muted">
-          Expense Tracker logs your spending, income, subscriptions, and EMIs in one place —
+          Jebbo logs your spending, income, subscriptions, and EMIs in one place —
           then tells you exactly how much is safe to spend today.
         </p>
 

@@ -5,8 +5,16 @@ import Showcase from "./components/Showcase"
 import Security from "./components/Security"
 import CTA from "./components/CTA"
 import Footer from "./components/Footer"
+import Legal from "./components/Legal"
+import privacy from "./legal/PRIVACY_POLICY.md?raw"
+import terms from "./legal/TERMS.md?raw"
+
+const legalPages = { "/privacy": privacy, "/terms": terms }
 
 export default function App() {
+  const legal = legalPages[location.pathname.replace(/\/$/, "")]
+  if (legal) return <Legal markdown={legal} />
+
   return (
     <div className="min-h-screen bg-bg text-text">
       <Navbar />
