@@ -1,6 +1,6 @@
-# Expense Tracker — marketing website
+# Jebbo — marketing website
 
-Business/marketing landing page for the Expense Tracker app. React (Vite) + Tailwind CSS v4.
+Business/marketing landing page for the Jebbo app. React (Vite) + Tailwind CSS v4.
 
 ## Develop
 
