@@ -33,7 +33,9 @@ Your sign-in session is kept in the iOS Keychain or Android Keystore. App settin
 
 ### If you visit our website
 
-This website uses **Google Analytics** to tell us how many people visit and which pages they look at. When you load a page, Google Analytics sets cookies (`_ga` and `_ga_*`) and records:
+This website uses **Google Analytics** to tell us how many people visit and which pages they look at, **but only if you accept analytics cookies** in the banner shown on your first visit. If you decline, or haven't chosen yet, Google Analytics isn't loaded at all: nothing is sent to Google and no analytics cookies are set.
+
+If you accept, Google Analytics sets cookies (`_ga` and `_ga_*`) and records:
 
 - the pages you view, and the site that linked you here
 - your device type, browser, operating system, screen size, and language
@@ -41,7 +43,7 @@ This website uses **Google Analytics** to tell us how many people visit and whic
 
 We see this only as totals and trends, not as a profile of you. The website doesn't ask for your name or email, and nothing you enter in the app is shared with Google Analytics.
 
-To opt out, block cookies for this site in your browser settings, or install Google's [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout).
+You can change your choice at any time with **Cookie settings** at the bottom of every page. Withdrawing consent stops Google Analytics and deletes its cookies from your browser. Your choice is saved in your browser's local storage; if you clear it, we'll ask again.
 
 ## 2. How we use it
 
@@ -51,7 +53,7 @@ To opt out, block cookies for this site in your browser settings, or install Goo
 - To run and fix the service, using the logs described above.
 - To understand how many people visit our website and which pages are useful, using Google Analytics.
 
-We do not use your data for advertising or profiling, and we don't sell it. **Legal basis (GDPR / UK GDPR):** we process your data to perform our contract with you (running the app), and for our legitimate interest in keeping the service secure and working (logs) and in understanding how our website is used (website analytics).
+We do not use your data for advertising or profiling, and we don't sell it. **Legal basis (GDPR / UK GDPR):** we process your data to perform our contract with you (running the app), and for our legitimate interest in keeping the service secure and working (logs). Website analytics runs only with your consent, which you can withdraw at any time.
 
 ## 3. Who else handles your data
 
