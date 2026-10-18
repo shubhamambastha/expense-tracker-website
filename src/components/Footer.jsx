@@ -9,6 +9,7 @@ export default function Footer() {
           <a href="/#download" className="hover:text-text">Download</a>
           <a href="/privacy" className="hover:text-text">Privacy</a>
           <a href="/terms" className="hover:text-text">Terms</a>
+          <a href="/delete-account" className="hover:text-text">Delete account</a>
         </div>
       </div>
     </footer>

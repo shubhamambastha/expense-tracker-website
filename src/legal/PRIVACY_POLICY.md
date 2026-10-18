@@ -4,7 +4,7 @@ _Effective: 17 October 2026_
 
 > **Before publishing:** fill in every `[BRACKETED]` value, then host this at a public URL (App Store Connect and Google Play both require one). This draft is generated from the codebase and is not legal advice. Have it reviewed if you operate at scale or in a regulated market.
 
-Jebbo ("we", "us") is a personal expense tracker run by **[LEGAL NAME / COMPANY]**, **[ADDRESS]**. This policy explains what Jebbo collects, why, who else handles it, and what you can do about it.
+Jebbo ("we", "us") is a personal expense tracker run by **Cremars Services**. This policy explains what Jebbo collects, why, who else handles it, and what you can do about it.
 
 **The short version:** Jebbo collects only what it needs to store your finances and sign you in. There are no ads, no analytics or tracking SDKs, and we never sell or share your data for advertising.
 
@@ -21,6 +21,7 @@ Everything you enter stays on your device. Nothing is sent to us. If you later s
 | **Account details** | Email address, password (stored only as a hash by our auth provider), and your account ID | You, at sign-up |
 | **Name and profile picture** | Your name, and a profile picture link if you sign in with Google | You (onboarding), Google, or Apple. Apple shares your name only the first time you sign in, and only if you choose to share it |
 | **Financial records you enter** | Transactions (amount, currency, date, category, merchant / payer name, notes), recurring payments and their reminders, accounts you create (name, type, provider name, nickname, notes, statement and due days), budgets, and custom categories | You |
+| **Phone number** | A phone number, only if you add one in Edit Profile | You |
 | **Preferences** | Default currency, theme, accent colour, and whether you've finished onboarding | You |
 | **Service logs** | For each request to our server: your account ID, the endpoint, the response status and timing. Logs never include your financial data, request bodies, or sign-in tokens | Automatically, when the app talks to our server |
 
@@ -45,11 +46,10 @@ We rely on these service providers (processors). Each one handles your data only
 
 | Provider | What it does | Data involved |
 | --- | --- | --- |
-| **Supabase** | Database and authentication (region: **[SUPABASE REGION]**) | Everything in section 1 for account holders |
-| **Railway** | Hosts our API server (region: **[RAILWAY REGION]**) | Data in transit to the database; service logs |
-| **Resend** | Sends the "Export Data" email | Your email address and the CSV files of your data |
+| **Supabase** | Database and authentication (region: **Mumbai, India (ap-south-1)**) | Everything in section 1 for account holders |
+| **Railway** | Hosts our API server (region: **US East, Virginia**) | Data in transit to the database; service logs |
+| **Resend** | Sends verification and password-reset codes, and the "Export Data" email | Your email address, plus the CSV files of your data when you export |
 | **Google** / **Apple** | Sign-in, only if you choose it | Sign-in is handled by Google or Apple under their own privacy policies. They share your email and name with us, and Google also shares your profile picture |
-| **[EMAIL PROVIDER FOR AUTH EMAILS, e.g. Supabase's built-in mailer or your SMTP provider]** | Sends verification and password-reset codes | Your email address |
 
 We may also disclose data if the law requires it, or as part of a merger or acquisition (we'll tell you first if that happens).
 
@@ -58,9 +58,9 @@ We may also disclose data if the law requires it, or as part of a merger or acqu
 ## 4. How long we keep it
 
 - **Account data:** for as long as your account exists.
-- **When you delete your account** (Settings → Data & Privacy → Delete Account): we immediately delete all of your records and then your login. Copies in our database provider's backups are removed within **[BACKUP RETENTION, e.g. 7 days]**.
+- **When you delete your account** (Settings → Data & Privacy → Delete Account): we immediately delete all of your records and then your login. We don't keep database backups, so no backup copy remains.
 - **Reset Account** deletes your records but keeps your login.
-- **Service logs:** kept for **[LOG RETENTION, e.g. 30 days]**, then deleted.
+- **Service logs:** kept for **7 days**, then deleted.
 - **Guest data:** stays on your device until you delete the app or reset it.
 
 ## 5. Your rights
@@ -79,7 +79,7 @@ All traffic between the app and our server uses HTTPS. Each request is checked a
 
 ## 7. Children
 
-Jebbo is not directed at children under **[13 / 16]**, and we don't knowingly collect their data. If you believe a child has created an account, contact us and we'll delete it.
+Jebbo is not directed at children under **13**, and we don't knowingly collect their data. If you believe a child has created an account, contact us and we'll delete it.
 
 ## 8. Changes
 
@@ -87,4 +87,4 @@ If we change this policy, we'll update the date above. If the change is signific
 
 ## 9. Contact
 
-**[SUPPORT EMAIL]**, **[LEGAL NAME / COMPANY]**, **[ADDRESS]**.
+**support@imcremars.xyz**, **Cremars Services**.
