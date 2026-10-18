@@ -1,3 +1,5 @@
+import { OPEN_COOKIE_SETTINGS } from "./CookieBanner"
+
 export default function Footer() {
   return (
     <footer className="border-t border-border/60">
@@ -10,6 +12,13 @@ export default function Footer() {
           <a href="/privacy" className="hover:text-text">Privacy</a>
           <a href="/terms" className="hover:text-text">Terms</a>
           <a href="/delete-account" className="hover:text-text">Delete account</a>
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event(OPEN_COOKIE_SETTINGS))}
+            className="hover:text-text"
+          >
+            Cookie settings
+          </button>
         </div>
       </div>
     </footer>

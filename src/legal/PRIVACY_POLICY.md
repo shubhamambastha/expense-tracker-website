@@ -1,12 +1,12 @@
 # Jebbo Privacy Policy
 
-_Effective: 17 October 2026_
+_Effective: 18 October 2026_
 
 > **Before publishing:** fill in every `[BRACKETED]` value, then host this at a public URL (App Store Connect and Google Play both require one). This draft is generated from the codebase and is not legal advice. Have it reviewed if you operate at scale or in a regulated market.
 
 Jebbo ("we", "us") is a personal expense tracker run by **Cremars Services**. This policy explains what Jebbo collects, why, who else handles it, and what you can do about it.
 
-**The short version:** Jebbo collects only what it needs to store your finances and sign you in. There are no ads, no analytics or tracking SDKs, and we never sell or share your data for advertising.
+**The short version:** Jebbo collects only what it needs to store your finances and sign you in. The app has no ads and no analytics or tracking SDKs, and we never sell or share your data for advertising. This website (not the app) uses Google Analytics to count visits; see "If you visit our website" below.
 
 ## 1. What we collect
 
@@ -31,14 +31,29 @@ Jebbo does **not** connect to your bank, and never asks for card numbers, bank a
 
 Your sign-in session is kept in the iOS Keychain or Android Keystore. App settings and a few local counters (for example, how many onboarding steps you skipped) stay on your device and are never sent to us.
 
+### If you visit our website
+
+This website uses **Google Analytics** to tell us how many people visit and which pages they look at, **but only if you accept analytics cookies** in the banner shown on your first visit. If you decline, or haven't chosen yet, Google Analytics isn't loaded at all: nothing is sent to Google and no analytics cookies are set.
+
+If you accept, Google Analytics sets cookies (`_ga` and `_ga_*`) and records:
+
+- the pages you view, and the site that linked you here
+- your device type, browser, operating system, screen size, and language
+- your approximate location (city or country), which Google works out from your IP address. Google Analytics does not store your IP address
+
+We see this only as totals and trends, not as a profile of you. The website doesn't ask for your name or email, and nothing you enter in the app is shared with Google Analytics.
+
+You can change your choice at any time with **Cookie settings** at the bottom of every page. Withdrawing consent stops Google Analytics and deletes its cookies from your browser. Your choice is saved in your browser's local storage; if you clear it, we'll ask again.
+
 ## 2. How we use it
 
 - To provide the app: store and sync your records, and show your dashboards, budgets, and insights. All calculations happen in the app.
 - To sign you in and keep your account secure, including emailing you verification and password-reset codes.
 - To email you a CSV export of your data when you ask for one.
 - To run and fix the service, using the logs described above.
+- To understand how many people visit our website and which pages are useful, using Google Analytics.
 
-We do not use your data for advertising or profiling, and we don't sell it. **Legal basis (GDPR / UK GDPR):** we process your data to perform our contract with you (running the app), and for our legitimate interest in keeping the service secure and working (logs).
+We do not use your data for advertising or profiling, and we don't sell it. **Legal basis (GDPR / UK GDPR):** we process your data to perform our contract with you (running the app), and for our legitimate interest in keeping the service secure and working (logs). Website analytics runs only with your consent, which you can withdraw at any time.
 
 ## 3. Who else handles your data
 
@@ -49,6 +64,7 @@ We rely on these service providers (processors). Each one handles your data only
 | **Supabase** | Database and authentication (region: **Mumbai, India (ap-south-1)**) | Everything in section 1 for account holders |
 | **Railway** | Hosts our API server (region: **US East, Virginia**) | Data in transit to the database; service logs |
 | **Resend** | Sends verification and password-reset codes, and the "Export Data" email | Your email address, plus the CSV files of your data when you export |
+| **Google Analytics** | Measures visits to this website (not the app) | The website usage data described in "If you visit our website" |
 | **Google** / **Apple** | Sign-in, only if you choose it | Sign-in is handled by Google or Apple under their own privacy policies. They share your email and name with us, and Google also shares your profile picture |
 
 We may also disclose data if the law requires it, or as part of a merger or acquisition (we'll tell you first if that happens).
@@ -61,6 +77,7 @@ We may also disclose data if the law requires it, or as part of a merger or acqu
 - **When you delete your account** (Settings → Data & Privacy → Delete Account): we immediately delete all of your records and then your login. We don't keep database backups, so no backup copy remains.
 - **Reset Account** deletes your records but keeps your login.
 - **Service logs:** kept for **7 days**, then deleted.
+- **Website analytics:** kept by Google Analytics for up to **14 months**, then deleted.
 - **Guest data:** stays on your device until you delete the app or reset it.
 
 ## 5. Your rights
