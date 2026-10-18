@@ -20,12 +20,12 @@ Everything you enter stays on your device. Nothing is sent to us. If you later s
 | --- | --- | --- |
 | **Account details** | Email address, password (stored only as a hash by our auth provider), and your account ID | You, at sign-up |
 | **Name and profile picture** | Your name, and a profile picture link if you sign in with Google | You (onboarding), Google, or Apple. Apple shares your name only the first time you sign in, and only if you choose to share it |
-| **Financial records you enter** | Transactions (amount, currency, date, category, merchant / payer name, notes), recurring payments and their reminders, accounts you create (name, type, provider name, nickname, notes, statement and due days), budgets, and custom categories | You |
+| **Financial records you enter** | Transactions (amount, currency, date, category, merchant / payer name, notes), recurring payments and their reminders, accounts you create (name, type, provider name, nickname, notes, statement and due days, and optionally the last 4 digits of a credit card), budgets, and custom categories | You |
 | **Phone number** | A phone number, only if you add one in Edit Profile | You |
 | **Preferences** | Default currency, theme, accent colour, and whether you've finished onboarding | You |
 | **Service logs** | For each request to our server: your account ID, the endpoint, the response status and timing. Logs never include your financial data, request bodies, or sign-in tokens | Automatically, when the app talks to our server |
 
-Jebbo does **not** connect to your bank, and never asks for card numbers, bank account numbers, or government IDs. It does not access your location, contacts, photos, camera, microphone, or advertising identifier.
+Jebbo does **not** connect to your bank, and never asks for card numbers, bank account numbers, or government IDs. For a credit card you can optionally enter its last 4 digits so the card is easy to recognise; those 4 digits can't be used to make a payment. It does not access your location, contacts, photos, camera, microphone, or advertising identifier.
 
 ### Stored on your device
 
