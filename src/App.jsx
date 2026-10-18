@@ -8,8 +8,9 @@ import Footer from "./components/Footer"
 import Legal from "./components/Legal"
 import privacy from "./legal/PRIVACY_POLICY.md?raw"
 import terms from "./legal/TERMS.md?raw"
+import deleteAccount from "./legal/DELETE_ACCOUNT_PAGE.md?raw"
 
-const legalPages = { "/privacy": privacy, "/terms": terms }
+const legalPages = { "/privacy": privacy, "/terms": terms, "/delete-account": deleteAccount }
 
 export default function App() {
   const legal = legalPages[location.pathname.replace(/\/$/, "")]

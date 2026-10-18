@@ -4,7 +4,7 @@ _Effective: 17 October 2026_
 
 > **Before publishing:** fill in every `[BRACKETED]` value (they match the ones in [PRIVACY_POLICY.md](./PRIVACY_POLICY.md)), then host this at a public URL next to the privacy policy. This draft is not legal advice. Have it reviewed, especially the liability and governing-law sections, which vary by country.
 
-These terms are an agreement between you and **[LEGAL NAME / COMPANY]** ("we", "us") covering your use of the Jebbo app and its related services ("Jebbo"). By using Jebbo you accept these terms. If you don't agree, please don't use the app.
+These terms are an agreement between you and **Cremars Services** ("we", "us") covering your use of the Jebbo app and its related services ("Jebbo"). By using Jebbo you accept these terms. If you don't agree, please don't use the app.
 
 ## 1. What Jebbo is
 
@@ -14,12 +14,12 @@ Jebbo is a personal expense tracker. You record your own transactions, accounts,
 
 ## 2. Eligibility
 
-You must be at least **[13 / 16]** years old, and old enough to accept these terms where you live. If you're under the age of majority, a parent or guardian must agree to these terms on your behalf.
+You must be at least **13** years old, and old enough to accept these terms where you live. If you're under the age of majority, a parent or guardian must agree to these terms on your behalf.
 
 ## 3. Your account
 
 - You can use Jebbo as a guest (your data stays on your device only) or create an account with email and password, Google, or Apple.
-- Keep your sign-in details secure. You're responsible for activity on your account. Tell us at **[SUPPORT EMAIL]** if you think someone else has accessed it.
+- Keep your sign-in details secure. You're responsible for activity on your account. Tell us at **support@imcremars.xyz** if you think someone else has accessed it.
 - Give accurate account information, and don't create accounts for anyone else without their permission.
 - **Guest data** exists only on your device. If you delete the app, reset it, or lose the device before signing in, that data is gone and we can't recover it.
 
@@ -69,7 +69,7 @@ To the extent the law allows:
 
 - we aren't liable for indirect, incidental, special, or consequential losses, or for lost profits, savings, or data;
 - we aren't liable for financial decisions you make based on the app's figures, budgets, or insights;
-- our total liability for any claim relating to Jebbo is limited to the greater of the amount you paid us in the 12 months before the claim, or **[USD 50 / INR 5,000]**.
+- our total liability for any claim relating to Jebbo is limited to the greater of the amount you paid us in the 12 months before the claim, or **INR 5,000**.
 
 These limits don't apply to liability that can't legally be excluded, such as liability for fraud, gross negligence, or death or personal injury caused by negligence.
 
@@ -79,7 +79,7 @@ If you use Jebbo in breach of these terms or the law and a third party makes a c
 
 ## 13. Governing law and disputes
 
-These terms are governed by the laws of **[COUNTRY / STATE]**, and disputes go to the courts of **[CITY]**. If you're a consumer, you also keep the protection of the mandatory laws of the country where you live, and you can bring claims in its courts. Please contact us first. Most problems can be fixed with an email.
+These terms are governed by the laws of **India**, and disputes go to the courts of **Raipur, Chhattisgarh**. If you're a consumer, you also keep the protection of the mandatory laws of the country where you live, and you can bring claims in its courts. Please contact us first. Most problems can be fixed with an email.
 
 ## 14. Changes to these terms
 
@@ -103,4 +103,4 @@ If any part of these terms can't be enforced, the rest still applies. If we don'
 
 ## 17. Contact
 
-**[SUPPORT EMAIL]**, **[LEGAL NAME / COMPANY]**, **[ADDRESS]**.
+**support@imcremars.xyz**, **Cremars Services**.
