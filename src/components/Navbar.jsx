@@ -1,10 +1,10 @@
 export default function Navbar() {
   return (
-    <header className="border-b border-border/60">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-bg/70 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <a href="/" aria-label="Jebbo home" className="flex items-center gap-2">
           <img src="/favicon.svg" alt="" className="h-8 w-8" />
-          <span className="bg-gradient-to-r from-primary via-secondary to-[#9b45e4] bg-clip-text text-2xl font-extrabold tracking-tight text-transparent">
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-2xl font-extrabold tracking-tight text-transparent">
             jebbo
           </span>
         </a>

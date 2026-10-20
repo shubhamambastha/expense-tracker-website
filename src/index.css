@@ -13,6 +13,9 @@
   --font-sans: -apple-system, "SF Pro Display", system-ui, "Segoe UI", Roboto, sans-serif;
 }
 
+/* keeps anchor targets clear of the sticky navbar */
+html { scroll-padding-top: 5rem; }
+
 body {
   background: var(--color-bg);
   color: var(--color-text);
