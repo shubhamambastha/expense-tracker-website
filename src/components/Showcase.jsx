@@ -13,7 +13,7 @@ function AnalyticsCard() {
           <p className="text-xs text-text-muted">This month</p>
           <p className="text-lg font-semibold">Budget progress</p>
         </div>
-        <span className="rounded-full bg-primary/15 px-3 py-1 text-xs text-primary">On track</span>
+        <span className="rounded-full bg-[#FF9F0A]/15 px-3 py-1 text-xs text-[#FF9F0A]">1 near limit</span>
       </div>
 
       <div className="mt-6 space-y-4">
@@ -21,7 +21,7 @@ function AnalyticsCard() {
           <div key={c.name}>
             <div className="flex justify-between text-sm">
               <span className="text-text-muted">{c.name}</span>
-              <span>{c.pct}%</span>
+              <span>{c.pct}% <span className="text-text-muted">used</span></span>
             </div>
             <div className="mt-1.5 h-2 rounded-full bg-surface-2">
               <div
@@ -52,14 +52,15 @@ export default function Showcase() {
     <section id="showcase" className="border-y border-border/60 bg-surface/30">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-16 px-6 py-20 md:flex-row-reverse">
         <div className="max-w-xl text-center md:text-left">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+          <p className="text-sm font-medium uppercase tracking-widest text-primary">Insights</p>
+          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
             See where it actually goes
           </h2>
           <p className="mt-4 text-text-muted">
             Category breakdowns, month-over-month deltas, and a savings rate that's hidden
             entirely when it wouldn't mean anything — no misleading percentages, ever.
           </p>
-          <ul className="mt-6 space-y-3 text-sm">
+          <ul className="mx-auto mt-6 w-fit space-y-3 text-left text-sm md:mx-0">
             <li className="flex items-center gap-2 text-text-muted">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               Week, month, quarter, and custom date ranges

@@ -40,7 +40,7 @@ const features = [
   },
 ]
 
-function FeatureIcon({ path }) {
+export function FeatureIcon({ path }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
       <path d={path} />
@@ -52,7 +52,8 @@ export default function Features() {
   return (
     <section id="features" className="mx-auto max-w-6xl px-6 py-20">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+        <p className="text-sm font-medium uppercase tracking-widest text-primary">Features</p>
+        <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
           Everything your spreadsheet was trying to do
         </h2>
         <p className="mt-3 text-text-muted">
@@ -62,11 +63,11 @@ export default function Features() {
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((f) => (
-          <div key={f.title} className="rounded-2xl border border-border bg-surface p-6">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 text-primary">
+          <div key={f.title} className="rounded-2xl border border-border bg-surface p-6 transition hover:-translate-y-0.5 hover:border-primary/40">
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary/25 to-secondary/15 text-primary">
               <FeatureIcon path={f.icon} />
             </span>
-            <h3 className="mt-4 font-semibold">{f.title}</h3>
+            <h3 className="mt-5 text-lg font-semibold">{f.title}</h3>
             <p className="mt-2 text-sm text-text-muted">{f.body}</p>
           </div>
         ))}
