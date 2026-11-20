@@ -6,9 +6,9 @@ const shield = "M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM9 12l2 2 4-4"
 
 const points = [
   {
-    title: "Secure login, industry standard",
+    title: "Sign-in handled by Supabase Auth",
     icon: lock,
-    body: "Sign-in is handled by Supabase Auth, with Google and Apple sign-in, instead of a password system we built ourselves.",
+    body: "Login runs on Supabase Auth, with Google and Apple sign-in, instead of a password system we built ourselves.",
   },
   {
     title: "Your data, isolated to you",
@@ -18,26 +18,25 @@ const points = [
   {
     title: "No card linking needed",
     icon: shield,
-    body: "You log transactions yourself — no bank credentials handed to a third party, no read access to your accounts.",
+    body: "You log transactions yourself. No bank credentials handed to a third party, no read access to your accounts.",
   },
 ]
 
 export default function Security() {
   return (
-    <section id="security" className="mx-auto max-w-6xl px-6 py-20">
-      <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">Security</p>
-        <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">Built to be trusted with money talk</h2>
-        <p className="mt-3 text-text-muted">Privacy isn't a feature we bolted on — it's the foundation.</p>
+    <section id="security" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="max-w-2xl">
+        <h2 className="text-balance text-3xl font-medium tracking-tight md:text-4xl">Built to be trusted with money talk</h2>
+        <p className="mt-3 text-text-muted">Jebbo never sees your bank login, and nobody else sees your entries</p>
       </div>
 
-      <div className="mt-14 grid gap-5 md:grid-cols-3">
+      <div className="mt-12 grid gap-4 md:grid-cols-3">
         {points.map((p) => (
-          <div key={p.title} className="rounded-2xl border border-border bg-surface p-6 transition hover:-translate-y-0.5 hover:border-primary/40">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary/25 to-secondary/15 text-primary">
+          <div key={p.title} className="rounded-2xl border border-border bg-surface p-6">
+            <span className="text-text-muted">
               <FeatureIcon path={p.icon} />
             </span>
-            <h3 className="mt-5 text-lg font-semibold">{p.title}</h3>
+            <h3 className="mt-4 text-lg font-medium">{p.title}</h3>
             <p className="mt-2 text-sm text-text-muted">{p.body}</p>
           </div>
         ))}

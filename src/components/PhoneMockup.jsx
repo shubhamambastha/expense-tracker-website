@@ -8,14 +8,14 @@ const transactions = [
 export default function PhoneMockup({ className = "" }) {
   return (
     <div
-      className={`relative w-[280px] rounded-[2.5rem] border-4 border-surface-2 bg-black p-3 shadow-2xl shadow-primary/10 ${className}`}
+      className={`relative w-[280px] rounded-[40px] border-4 border-surface-2 bg-black p-3 shadow-2xl shadow-black ${className}`}
     >
       <div className="absolute left-1/2 top-3 h-1.5 w-16 -translate-x-1/2 rounded-full bg-surface-2" />
-      <div className="rounded-[1.75rem] bg-surface px-4 pb-5 pt-8">
-        <p className="text-xs text-text-muted">Total Balance</p>
+      <div className="rounded-[28px] bg-surface px-4 pb-5 pt-8 tabular-nums">
+        <p className="text-xs text-text-muted">Total balance</p>
         <p className="mt-1 text-3xl font-semibold tracking-tight">₹1,24,580</p>
 
-        <div className="mt-4 rounded-2xl bg-gradient-to-br from-primary/15 to-secondary/10 p-3">
+        <div className="mt-4 rounded-2xl border border-primary/20 bg-surface-2 p-3">
           <p className="text-[11px] text-text-muted">Safe to spend today</p>
           <p className="mt-1 text-xl font-semibold text-primary">₹1,840</p>
         </div>
@@ -25,9 +25,9 @@ export default function PhoneMockup({ className = "" }) {
           <p className="text-xs text-primary">See all</p>
         </div>
 
-        <ul className="mt-2 space-y-2.5">
+        <ul className="mt-2 space-y-3">
           {transactions.map((t) => (
-            <li key={t.name} className="flex items-center gap-2.5">
+            <li key={t.name} className="flex items-center gap-3">
               <span
                 className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[11px] font-semibold"
                 style={{ backgroundColor: `${t.color}26`, color: t.color }}

@@ -8,7 +8,6 @@
   --color-text: #ffffff;
   --color-text-muted: #ebebf599;
   --color-primary: #00c896;
-  --color-secondary: #0a84ff;
   --color-on-accent: #003328;
   --font-sans: -apple-system, "SF Pro Display", system-ui, "Segoe UI", Roboto, sans-serif;
 }
@@ -24,7 +23,7 @@ body {
 
 /* Long-form copy on /privacy and /terms (rendered from markdown) */
 .legal { line-height: 1.7; color: var(--color-text-muted); }
-.legal h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.2; color: var(--color-text); margin-bottom: 0.5rem; }
+.legal h1 { font-size: 2.25rem; font-weight: 500; line-height: 1.2; color: var(--color-text); margin-bottom: 0.5rem; }
 .legal h2 { font-size: 1.375rem; font-weight: 600; color: var(--color-text); margin: 2.5rem 0 0.75rem; }
 .legal h3 { font-size: 1.0625rem; font-weight: 600; color: var(--color-text); margin: 1.5rem 0 0.5rem; }
 .legal p, .legal ul, .legal table { margin-bottom: 1rem; }

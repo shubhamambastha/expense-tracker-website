@@ -10,39 +10,39 @@ const icon = {
 const features = [
   {
     title: "One log for everything",
-    body: "Expenses, income, and transfers in a single unified list — search, filter, and sort by date, category, or amount.",
+    body: "Expenses, income and transfers in a single list. Search, filter and sort by date, category or amount.",
     icon: icon.list,
   },
   {
-    title: "Subscriptions & EMIs on autopilot",
-    body: "Recurring charges are tracked automatically with an upcoming-payments timeline, so nothing renews as a surprise.",
+    title: "Subscriptions and EMIs, tracked",
+    body: "Recurring charges are logged automatically with an upcoming-payments timeline, so nothing renews as a surprise.",
     icon: icon.repeat,
   },
   {
     title: "Every account, one view",
-    body: "Bank, wallet, and credit card balances stay current automatically, with credit utilization and due-date reminders built in.",
+    body: "Bank, wallet and credit card balances stay current automatically, with credit utilization and due-date reminders built in.",
     icon: icon.card,
   },
   {
     title: "Budgets that hold the line",
-    body: "Set a monthly limit per category and get warned as you approach it — no rollover games, just a clear number.",
+    body: "Set a monthly limit per category and get warned as you approach it. No rollover games, just a clear number.",
     icon: icon.target,
   },
   {
-    title: '"Safe to spend" today',
-    body: "A single number — this month's income minus what you've already spent — so you always know what's actually free to use.",
+    title: "Safe to spend today",
+    body: "One number: this month's income minus what you've already spent, so you always know what's actually free to use.",
     icon: icon.gauge,
   },
   {
-    title: "Insights that explain themselves",
-    body: "Spending spikes, weekend overspending, and savings rate, surfaced automatically from your own transaction history.",
+    title: "Insights from your own history",
+    body: "Spending spikes, weekend overspending and savings rate, surfaced automatically from your transactions.",
     icon: icon.chart,
   },
 ]
 
 export function FeatureIcon({ path }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
       <path d={path} />
     </svg>
   )
@@ -50,24 +50,23 @@ export function FeatureIcon({ path }) {
 
 export default function Features() {
   return (
-    <section id="features" className="mx-auto max-w-6xl px-6 py-20">
-      <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">Features</p>
-        <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
+    <section id="features" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="max-w-2xl">
+        <h2 className="text-balance text-3xl font-medium tracking-tight md:text-4xl">
           Everything your spreadsheet was trying to do
         </h2>
         <p className="mt-3 text-text-muted">
-          Built around how money actually moves — not just a list of numbers.
+          Built around how money actually moves, not just a list of numbers
         </p>
       </div>
 
-      <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((f) => (
-          <div key={f.title} className="rounded-2xl border border-border bg-surface p-6 transition hover:-translate-y-0.5 hover:border-primary/40">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary/25 to-secondary/15 text-primary">
+          <div key={f.title} className="border-t border-border pt-6">
+            <span className="text-text-muted">
               <FeatureIcon path={f.icon} />
             </span>
-            <h3 className="mt-5 text-lg font-semibold">{f.title}</h3>
+            <h3 className="mt-4 text-lg font-medium">{f.title}</h3>
             <p className="mt-2 text-sm text-text-muted">{f.body}</p>
           </div>
         ))}

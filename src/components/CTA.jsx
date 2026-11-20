@@ -11,7 +11,7 @@ function StoreLink({ href, children }) {
   return (
     <span aria-disabled="true" className="relative flex h-14 cursor-not-allowed items-center opacity-50">
       {children}
-      <span className="absolute -top-2.5 right-2 rounded-full bg-surface-2 px-2 py-0.5 text-[10px] font-medium text-text">
+      <span className="absolute -top-2.5 right-2 rounded-md bg-surface-2 px-2 py-0.5 text-[11px] font-medium text-text">
         Coming soon
       </span>
     </span>
@@ -21,12 +21,12 @@ function StoreLink({ href, children }) {
 export default function CTA() {
   return (
     <section id="download" className="mx-auto max-w-6xl px-6 pb-24">
-      <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/20 via-surface to-secondary/20 px-8 py-16 text-center">
-        <h2 className="text-balance text-3xl font-semibold tracking-tight md:text-4xl">
+      <div className="rounded-2xl border border-border bg-surface px-8 py-16 text-center">
+        <h2 className="text-balance text-3xl font-medium tracking-tight md:text-4xl">
           Start tracking in under a minute
         </h2>
         <p className="mx-auto mt-3 max-w-md text-balance text-text-muted">
-          Free to use. No credit card, no bank linking — just you and where your money goes.
+          Free to use. No credit card, no bank linking, just you and where your money goes.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           {/* ponytail: placeholder pill — swap for Apple's official black SVG badge (needs a developer-account holder to accept Apple's Marketing Artwork License at developer.apple.com/app-store/marketing/guidelines/ before download) */}
