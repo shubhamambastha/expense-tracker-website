@@ -28,7 +28,7 @@ export default function CookieBanner() {
     >
       <p className="text-sm leading-relaxed text-text-muted">
         We'd like to use Google Analytics cookies to count visits and see which pages are
-        useful. Nothing is used for ads, and the app itself has no tracking.{" "}
+        useful. Nothing is used for ads.{" "}
         <a href="/privacy" className="text-primary underline underline-offset-2">
           Privacy Policy
         </a>

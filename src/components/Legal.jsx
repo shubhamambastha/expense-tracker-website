@@ -3,7 +3,8 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 
 // The .md files in src/legal are verbatim copies of the app repo's docs/ —
-// re-copy them when those change. Here we only drop the internal
+// re-copy them when those change. Exception: PRIVACY_POLICY.md adds the
+// website's Google Analytics disclosure, so re-apply that. Here we only drop the internal
 // "Before publishing" note and point the cross-link at the live page.
 export default function Legal({ markdown }) {
   const title = markdown.match(/^# (.+)/m)[1]

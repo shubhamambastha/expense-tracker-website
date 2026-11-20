@@ -1,18 +1,16 @@
 # Jebbo Privacy Policy
 
-_Effective: 18 October 2026_
-
-> **Before publishing:** fill in every `[BRACKETED]` value, then host this at a public URL (App Store Connect and Google Play both require one). This draft is generated from the codebase and is not legal advice. Have it reviewed if you operate at scale or in a regulated market.
+_Effective: 20 November 2026_
 
 Jebbo ("we", "us") is a personal expense tracker run by **Cremars Services**. This policy explains what Jebbo collects, why, who else handles it, and what you can do about it.
 
-**The short version:** Jebbo collects only what it needs to store your finances and sign you in. The app has no ads and no analytics or tracking SDKs, and we never sell or share your data for advertising. This website (not the app) uses Google Analytics to count visits; see "If you visit our website" below.
+**The short version:** Jebbo collects only what it needs to store your finances and sign you in, plus usage events (which screens and features you use), screen recordings with every piece of text and image blacked out, error reports, and app logs, so we can improve the app and fix bugs. None of these include your amounts, names, notes, or anything else you type. There are no ads, and we never sell or share your data for advertising. This website (not the app) uses Google Analytics to count visits, only if you accept analytics cookies; see "If you visit our website" below.
 
 ## 1. What we collect
 
 ### If you use Jebbo without an account (guest mode)
 
-Everything you enter stays on your device. Nothing is sent to us. If you later sign in, Jebbo uploads that on-device data to your new account and then removes the local copy.
+Everything you enter stays on your device and is never sent to us. The app does send anonymous usage events (see "Usage events" below), tied to a random ID rather than to you. If you later sign in, Jebbo uploads your on-device data to your new account and then removes the local copy, and your earlier usage events are linked to your account.
 
 ### If you create an account
 
@@ -24,12 +22,17 @@ Everything you enter stays on your device. Nothing is sent to us. If you later s
 | **Phone number** | A phone number, only if you add one in Edit Profile | You |
 | **Preferences** | Default currency, theme, accent colour, and whether you've finished onboarding | You |
 | **Service logs** | For each request to our server: your account ID, the endpoint, the response status and timing. Logs never include your financial data, request bodies, or sign-in tokens | Automatically, when the app talks to our server |
+| **Usage events** | Which tab you open; that you added, edited, or deleted a transaction (and whether it was an expense or income, never the amount or details); sign-in, sign-out, and sign-up, with the method used (email, Google, Apple); onboarding steps started, skipped, and finished; the app being opened or closed; and basic device details (app version, OS version, device model, language). Linked to a random ID and, once you sign in, your account ID. Never your email, amounts, names, merchants, notes, or account details | Automatically, while you use the app (also in guest mode) |
+| **Error reports** | When the app crashes or hits an unexpected error: the error type, the first line of its message (the rest is removed so it can't carry anything you typed), where in the app's code it happened, and the same device details and IDs as usage events | Automatically, when something goes wrong (also in guest mode) |
+| **Screen recordings** | A replay of how you move through the app: which screens you open, where you tap, and how the layout changes. Every piece of text, every image, and every chart is blacked out on your device before anything is sent, so recordings never show your amounts, names, notes, or other entries | Automatically, while you use the app (also in guest mode) |
+| **App logs** | Short warnings when something fails in the background (for example, a sync that didn't finish): which part failed and the first line of the error | Automatically, when something fails |
+| **Survey answers** | Your answers to an in-app survey, only if you choose to answer one | You |
 
-Jebbo does **not** connect to your bank, and never asks for card numbers, bank account numbers, or government IDs. For a credit card you can optionally enter its last 4 digits so the card is easy to recognise; those 4 digits can't be used to make a payment. It does not access your location, contacts, photos, camera, microphone, or advertising identifier.
+Jebbo does **not** connect to your bank, and never asks for full card numbers, bank account numbers, or government IDs. For a credit card you can optionally enter its last 4 digits so the card is easy to recognise; those 4 digits can't be used to make a payment. It does not access your location, contacts, photos, camera, microphone, or advertising identifier.
 
 ### Stored on your device
 
-Your sign-in session is kept in the iOS Keychain or Android Keystore. App settings and a few local counters (for example, how many onboarding steps you skipped) stay on your device and are never sent to us.
+Your sign-in session is kept in the iOS Keychain or Android Keystore. App settings stay on your device. The random usage-event ID, and any events not yet sent, are stored on the device too; signing out replaces the ID with a new one. When you're signed in, the app also keeps a copy of your latest transactions and accounts on the device so it opens instantly; that copy is deleted when you sign out.
 
 ### If you visit our website
 
@@ -50,10 +53,12 @@ You can change your choice at any time with **Cookie settings** at the bottom of
 - To provide the app: store and sync your records, and show your dashboards, budgets, and insights. All calculations happen in the app.
 - To sign you in and keep your account secure, including emailing you verification and password-reset codes.
 - To email you a CSV export of your data when you ask for one.
-- To run and fix the service, using the logs described above.
+- To run and fix the service, using the service logs, error reports, and app logs described above.
+- To understand how the app is used, for example which features people use and where onboarding loses them, using the usage events and screen recordings described above.
+- To ask for your feedback through optional in-app surveys.
 - To understand how many people visit our website and which pages are useful, using Google Analytics.
 
-We do not use your data for advertising or profiling, and we don't sell it. **Legal basis (GDPR / UK GDPR):** we process your data to perform our contract with you (running the app), and for our legitimate interest in keeping the service secure and working (logs). Website analytics runs only with your consent, which you can withdraw at any time.
+We do not use your data for advertising or profiling, and we don't sell it. **Legal basis (GDPR / UK GDPR):** we process your data to perform our contract with you (running the app), and for our legitimate interests in keeping the service secure and working (service logs, error reports, app logs) and in improving the app (usage events, screen recordings, survey answers). Website analytics runs only with your consent, which you can withdraw at any time.
 
 ## 3. Who else handles your data
 
@@ -64,6 +69,7 @@ We rely on these service providers (processors). Each one handles your data only
 | **Supabase** | Database and authentication (region: **Mumbai, India (ap-south-1)**) | Everything in section 1 for account holders |
 | **Railway** | Hosts our API server (region: **US East, Virginia**) | Data in transit to the database; service logs |
 | **Resend** | Sends verification and password-reset codes, and the "Export Data" email | Your email address, plus the CSV files of your data when you export |
+| **PostHog** | Product analytics, screen recording, error tracking, app logs, and surveys (region: **EU, Frankfurt**). We've turned off location lookup from your IP address | Usage events, screen recordings, error reports, app logs, survey answers, the random usage-event ID, and your account ID once you sign in |
 | **Google Analytics** | Measures visits to this website (not the app) | The website usage data described in "If you visit our website" |
 | **Google** / **Apple** | Sign-in, only if you choose it | Sign-in is handled by Google or Apple under their own privacy policies. They share your email and name with us, and Google also shares your profile picture |
 
@@ -77,6 +83,7 @@ We may also disclose data if the law requires it, or as part of a merger or acqu
 - **When you delete your account** (Settings → Data & Privacy → Delete Account): we immediately delete all of your records and then your login. We don't keep database backups, so no backup copy remains.
 - **Reset Account** deletes your records but keeps your login.
 - **Service logs:** kept for **7 days**, then deleted.
+- **Usage events, screen recordings, error reports, app logs, and survey answers:** kept for up to **12 months**, then deleted. Deleting your account doesn't remove them automatically yet. Email us (see section 9) and we'll delete them.
 - **Website analytics:** kept by Google Analytics for up to **14 months**, then deleted.
 - **Guest data:** stays on your device until you delete the app or reset it.
 
@@ -86,7 +93,7 @@ You can do all of the following yourself in the app:
 
 - **Access / portability:** Settings → Data & Privacy → Export Data emails all of your records to you as CSV files.
 - **Correction:** edit any record, or your profile, in the app.
-- **Deletion:** Delete Account removes everything (see section 4).
+- **Deletion:** Delete Account removes your account and records (see section 4; usage events are deleted on request).
 
 Depending on where you live, you may also have the right to object to or restrict processing, withdraw consent, or complain to your data protection authority. This includes rights under the GDPR / UK GDPR (EU and UK), the CCPA / CPRA (California), and India's Digital Personal Data Protection Act. **California residents:** we do not sell or "share" personal information as the CCPA defines those terms, and we don't use sensitive personal information to infer characteristics about you. To exercise any of these rights, email us (see section 9). We won't treat you differently for doing so.
 
@@ -94,9 +101,11 @@ Depending on where you live, you may also have the right to object to or restric
 
 All traffic between the app and our server uses HTTPS. Each request is checked against your sign-in token, and the database enforces row-level security so that one user cannot read another user's data. Your session token is stored in your device's secure keystore. No system is perfectly secure, but we'll notify you and the relevant authorities of a breach if the law requires us to.
 
-## 7. Children
+## 7. Children and teens
 
-Jebbo is not directed at children under **13**, and we don't knowingly collect their data. If you believe a child has created an account, contact us and we'll delete it.
+Jebbo is not directed at children under **13**, and we don't knowingly collect their data. If you believe a child under 13 has created an account, contact us (see section 9) and we'll delete it.
+
+Teens aged 13 and over can use Jebbo. Some places treat people as children for data protection until a higher age, for example under 16 in some EU countries and under 18 in India. If you're under that age where you live, you need your parent or guardian's permission to use Jebbo, and they agree to this policy and our [Terms](https://jebbo.imcremars.xyz/terms) for you. A parent or guardian can contact us at any time to see or delete their child's data. Jebbo has no ads and doesn't use anyone's data for profiling or tracking, whatever their age.
 
 ## 8. Changes
 

@@ -2,8 +2,6 @@
 
 _Effective: 17 October 2026_
 
-> **Before publishing:** fill in every `[BRACKETED]` value (they match the ones in [PRIVACY_POLICY.md](./PRIVACY_POLICY.md)), then host this at a public URL next to the privacy policy. This draft is not legal advice. Have it reviewed, especially the liability and governing-law sections, which vary by country.
-
 These terms are an agreement between you and **Cremars Services** ("we", "us") covering your use of the Jebbo app and its related services ("Jebbo"). By using Jebbo you accept these terms. If you don't agree, please don't use the app.
 
 ## 1. What Jebbo is

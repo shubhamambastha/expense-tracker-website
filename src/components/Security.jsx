@@ -8,7 +8,7 @@ const points = [
   {
     title: "Secure login, industry standard",
     icon: lock,
-    body: "Sign-in is handled by Auth0 — the same authentication infrastructure trusted by banks and enterprise apps.",
+    body: "Sign-in is handled by Supabase Auth, with Google and Apple sign-in, instead of a password system we built ourselves.",
   },
   {
     title: "Your data, isolated to you",

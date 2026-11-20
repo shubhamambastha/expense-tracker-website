@@ -1,7 +1,5 @@
 # Delete your Jebbo account
 
-> **Before publishing:** host this at `https://jebbo.imcremars.xyz/delete-account` (the URL given in Play Console → Data safety, see [APP_PRIVACY_LABELS.md](./APP_PRIVACY_LABELS.md#google-play-data-safety)). Today that path falls back to the landing page, which Google treats as no deletion URL. Fill in every `[BRACKETED]` value with the same answer as [PRIVACY_POLICY.md](./PRIVACY_POLICY.md). Google requires that this page names the app (Jebbo) and the developer as they appear on the store listing, and lets people ask for deletion without reinstalling the app.
-
 You can delete your Jebbo account, and all of the data in it, whenever you want.
 
 ## Option 1: in the app (fastest)
